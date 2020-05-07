@@ -14,27 +14,21 @@ teamOneShoot.addEventListener("click", function () {
     let x = Math.floor(Math.random() * 10);
     if (x % 2 == 0) {
         x = Number(teamOneGoals.innerHTML) + 1;
-        teamOneGoals.innerHTML = x
-    }
-    teamOneShots.innerHTML = newTeamOneShots;
-})
+        teamOneGoals.innerHTML = x}
+    teamOneShots.innerHTML = newTeamOneShots;})
 
 teamTwoShoot.addEventListener("click", function () {
     let newTeamTwoShots = Number(teamTwoShots.innerHTML) + 1;
     let x = Math.floor(Math.random() * 10);
     if (x % 2 == 0) {
         x = Number(teamTwoGoals.innerHTML) + 1;
-        teamTwoGoals.innerHTML = x
-    }
-    teamTwoShots.innerHTML = newTeamTwoShots;
-})
+        teamTwoGoals.innerHTML = x}
+    teamTwoShots.innerHTML = newTeamTwoShots;})
 
 gameReset.addEventListener("click", function () {
     let newResetCount = Number(resetCount.innerHTML) + 1;
-
     teamOneShots.innerHTML = 0;
     teamOneGoals.innerHTML = 0;
     teamTwoShots.innerHTML = 0;
     teamTwoGoals.innerHTML = 0;
-    resetCount.innerHTML = newResetCount;
-})
+    resetCount.innerHTML = newResetCount;})
